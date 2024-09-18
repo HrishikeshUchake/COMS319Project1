@@ -100,6 +100,39 @@
     .bd-mode-toggle .dropdown-menu .active .bi {
       display: block !important;
     }
+    
+    /* Base style for the card */
+    .card {
+        transition: all 0.2s;
+        height: 850px; /* You can adjust this height as per your design */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+   
+    /* Hover effect */
+    .card:hover {
+        transform: scale(1.15);
+    }
+    .card-body {
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+  .card-title{
+    text-align: left;
+    margin-left: 20px;
+    font-family: "Copperplate";
+}
+.card-price{
+  font-size: 1.25rem;
+  font-weight: bold;
+  color:#28a745
+}
+
   </style>
 
 
@@ -141,8 +174,8 @@
             <h4>Pages</h4>
             <ul class="list-unstyled">
               <li><a href="./authors.html">Authors</a></li>
-              <li><a href="./index.html">Watches</a></li>
-              <li><a href="./index2.html">Perfumes</a></li>
+              <li><a href="./WatchesCatalog.html">Watches</a></li>
+              <li><a href="./perfumeCatalog.html">Perfumes</a></li>
             </ul>
           </div>
         </div>
@@ -189,19 +222,16 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="./images/ombre.avif">
+              <h5 class="card-title">Ombré Leather Fragrance</h5>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Dust on wind, skin on skin, the <strong>
+                Ombré Leather</strong> fragrance evokes the desert heart of the west. 
+                  The sensuality of rich black leather is texturized with patchouli and vetiver, while floral tones of jasmine sambac 
+                  conjure wild desert beauty – and layers of amber and moss mimic the heat of rock and sand.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -210,19 +240,18 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+                <img src="./images/adgg.webp"/>
+                <h5 class="card-title">Acqua di Giò Parfum</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">The deep and intense cologne, capturing the powerful sensations of nature.
+                  A woody aromatic cologne combining bergamot with rosemary essence and incense notes to create an intensity that is vibrant and charismatic.
+                  Formulated with sustainably sourced ingredients like Bergamot Heart, Clary Sage Heart, and Patchouli Essence.
+                  Fragrance Family: Woody Aquatic.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -231,19 +260,18 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src ="./images/creed.webp"/>
+              <h5 class="card-title">CREED AVENTUS</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text"><strong>Aventus</strong>
+                  Dry Woods, Fresh, Citrus & Fruity
+                  Audacious, confident and powerful, this signature fragrance from The House of Creed has been delicately crafted to create a true contemporary classic.
+                  </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -253,19 +281,19 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="./images/dg.webp"/>
+              <h5 class="card-title">DOLCE & GABBANA LIGHT BLUE INTENSE</h5>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">The sensuality of sun-drenched skin, the bracing breeze of the Mediterranean Sea, 
+                  the fruity and floral scents of the vegetation: Dolce&Gabbana Light Blue Eau Intense captures 
+                  the quintessence of a summer day lulled by gentle waves lapping against the enchanting cliffs of Capri.
+                  <strong>Dolce&Gabbana Light Blue Eau Intense perfume</strong> for men is an even more 
+                  lively interpretation of the iconic men’s fragrance which gives life to the 
+                  sparkling contrast between freshness and sensuality, through notes of Lemon, Aquatic Scents, and Clary Sage.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -274,19 +302,18 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src ="./images/Armani.webp" alt="Acqua Di Gio  Profumo"/>
+              <h5 class="card-title">Acqua di Giò Profumo Giorgio Armani</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text"><strong>Acqua Di Giò Profumo</strong> is a sophisticated aquatic fragrance born from volcanic rock and deep ocean waters.
+                  Fresh bergamot and marine accords are paired with the deep, 
+                  captivating radiance of incense – an inspiring and seductive rich material, creating a profoundly intense and adventurous aromatic cologne for men.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -295,19 +322,18 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="./images/givenchy.webp"/>
+              <h5 class="card-title">Givenchy Gentleman</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">The sensuality of ambery wood is faceted by luminous ethereal iris for an utterly addictive, heady duet.
+                  Infused with smooth natural whisky absolute, this fragrance has been crafted in grasse using aromatic barley from refined scottish distillery.
+                  The amber-toned perfume, evoking the intense hue of whisky itself, is encased within the polished, pure forms of a bottle echoing an elegant hip flask.
+                  <strong>Givenchy gentleman eau de parfum Reserve Privée</strong> embodies the ultimate in timeless elegance and refinement.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -317,19 +343,21 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="./images/Hermes-Herbes-Vives-1.jpg"/>
+              
+              <h5 class="card-title">Hermes H24 Eau de toilette</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Created by Hermès perfumer Christine Nagel, 
+                  <strong>H24 eau de toilette</strong> is the first olfactory expression of the contemporary man according to Hermès. 
+                  It is a bright and radiant fragrance, stemming from the daring blend of nature and technology.
+                  The aromatic, botanical freshness of H24 eau de toilette is underpinned by a blend of enveloping clary sage, 
+                  electric narcissus, invigorating rosewood and warm, metallic sclarene.
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -338,19 +366,16 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="./images/prada.jpg"/>
+              <h5 class="card-title">L'Homme Prada</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">A parfum of doubles, of layers, of male and female with a unique result: 
+                  <strong>L'Homme Prada</strong>, a mix of classic ingredients mixed in a contemporary accent. Neroli, geranium and Patchuli are mixed with Amber and Iris, a sensual fragrance with a sophisticated allure.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+
                   </div>
                   <small class="text-body-secondary">9 mins</small>
                 </div>
@@ -359,28 +384,24 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+             <img src="./images/versace-eros-edp-200ml_f3f0f3ea5c364104b2439e82d1881c74_master.webp"/>
+             <h5 class="card-title">Versace Eros EDP</h5>
+
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text"><strong>Eros Pour Homme Eau de Parfum</strong> is a seductive fragrance inspired by the classical Greek God of love. 
+                  Its confident and masculine notes embody sensuality and power. 
+                  The fragrance is housed in a transparent blue bottle, adorned with a central Medusa, Greca engravings, and gold accents on the cap. 
                 <div class="d-flex justify-content-between align-items-center">
+                  
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit Website</button>
+                    <h6 class="card-price">$120.00</h6>
+                  
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+    
+          
 
   </main>
 
