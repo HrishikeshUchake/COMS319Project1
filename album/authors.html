@@ -16,39 +16,58 @@
 <body>
     <div class="b-example-divider"></div>
 
-    <header class="p-3 text-bg-dark">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Authors</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-          </ul>
+    <header data-bs-theme="dark">
+        <div class="collapse text-bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4>About</h4>
+                <p class="text-body-secondary">Subhajit & Hrishikesh are the creative forces behind the captivating catalogs that explore the world of luxury watches and perfumes. With an eye for detail and a passion for craftsmanship, they bring to life the stories behind these iconic products, blending the art of design with the essence of timeless elegance. Their work captures the allure and sophistication of these luxury items, offering readers a sensory experience that goes beyond the page.</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4>Pages</h4>
+                <ul class="list-unstyled">
+                  <li><a href="./authors.html">Authors</a></li>
+                  <li><a href="./WatchesCatalog.html">Watches</a></li>
+                  <li><a href="./perfumeCatalog.html">Perfumes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <div class="container">
-        <h1>Author Information</h1>
-        <div class="course-info">
-            <h2>Course Name: COMS 319</h2>
-            <h3>Professor: Abraham Aldaco</h3>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+              aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
         </div>
+      </header>
+</body>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
+    <div style="width: 60%; margin: 50px auto; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #2c3e50; text-align: center;">Author Information</h1>
         
-        <div class="student-info">
-            <h3>Student Names:</h3>
-            <ul>
-                <li>Hrishikesh Uchake- <a href="mailto:uchakeh@gmail.com">uchakeh@gmail.com</a></li>
-                <li>Subhajit Gucchait - <a href="mailto:emily.johnson@email.com">@email.com</a></li>
+        <!-- Student Names come first and are larger -->
+        <div style="margin: 20px 0;">
+            <h2 style="color: #34495e;">Student Names:</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="padding: 5px 0;">Hrishikesh Uchake - <a href="mailto:uchakeh@gmail.com" style="color: #2980b9; text-decoration: none;">uchakeh@gmail.com</a></li>
+                <li style="padding: 5px 0;">Subhajit Gucchait - <a href="mailto:emily.johnson@email.com" style="color: #2980b9; text-decoration: none;">mail.com</a></li>
+
             </ul>
         </div>
 
-        <div class="date-info">
-            <h4>Date: September 17, 2024</h4>
+        <!-- Professor's Name and Course come next and are smaller -->
+        <div style="margin: 20px 0;">
+            <h3 style="color: #34495e;">Course Name: COMS 319</h3>
+            <h4 style="color: #34495e;">Professor: Abraham Aldaco</h4>
+        </div>
+
+        <!-- Date -->
+        <div style="margin: 20px 0;">
+            <h4 style="color: #34495e;">Date: September 17, 2024</h4>
         </div>
     </div>
 </body>
